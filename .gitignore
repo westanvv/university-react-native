@@ -20,6 +20,7 @@ DerivedData
 *.hmap
 *.ipa
 *.xcuserstate
+**/IDEWorkspaceChecks.plist
 ios/.xcode.env.local
 
 # Android/IntelliJ
@@ -64,3 +65,11 @@ yarn-error.log
 
 # testing
 /coverage
+
+# Secret files and directories
+.env
+.env.development
+.env.production
+
+apps/**/artifacts
+apps/**/android/app/gc.key.json
