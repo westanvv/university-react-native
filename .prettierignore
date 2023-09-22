@@ -1,0 +1,10 @@
+.git
+.idea
+.gradle
+.vscode
+/dist
+/coverage
+/node_modules
+/tmp
+/build
+/Pods
