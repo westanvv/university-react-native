@@ -1,10 +1,10 @@
 {
   "extends": "@tsconfig/react-native/tsconfig.json",
   "compilerOptions": {
+    "baseUrl": ".",
     "paths": {
-      "@root/*": ["./*"],
       "@app/*": ["src/*"]
     },
-    "skipLibCheck": true,
+    "skipLibCheck": true
   }
 }
