@@ -9,6 +9,7 @@ export default (): LoginStyles => {
   return StyleSheet.create({
     root: {
       padding: 16,
+      paddingTop: 64,
     },
     desc: {
       fontSize: 16,

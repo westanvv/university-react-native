@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1034578465965",
+    "project_id": "university-rn",
+    "storage_bucket": "university-rn.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1034578465965:android:e46e6638d8b58b33b5e224",
+        "android_client_info": {
+          "package_name": "com.rnlabs"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB88BIUjF4YzbHX8Hbz9fYQ5ll_bi0bde0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

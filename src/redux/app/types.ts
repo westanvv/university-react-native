@@ -3,6 +3,12 @@ export type User = {
   name: string;
 };
 
+export type Message = {
+  title?: string;
+  message?: string;
+};
+
 export interface AppReducer {
   user?: User;
+  messages: Message[];
 }

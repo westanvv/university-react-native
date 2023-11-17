@@ -10,6 +10,8 @@ import defaultStyles, {LoginStyles} from './Login.styles';
 function Login() {
   const user = useSelector(state => state.app.user);
   const user2 = useSelector(state => state.user.user);
+
+  const messages = useSelector(state => state.app.messages);
   const navigation = useNavigation<NavigationProps>();
   const styles = defaultStyles();
 
@@ -27,6 +29,15 @@ function Login() {
     <View style={[styles.root]}>
       <Button title="Login" onPress={handleLogin} />
       <Text style={styles.desc}>{user?.name}</Text>
+
+      <View style={{flexDirection: 'column'}}>
+        {messages.map((message, index) => (
+          <View key={index} style={{width: '100%'}}>
+            <Text style={styles.desc}>{message?.title}</Text>
+            <Text style={styles.desc}>{message?.message}</Text>
+          </View>
+        ))}
+      </View>
     </View>
   );
 }
