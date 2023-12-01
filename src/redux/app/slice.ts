@@ -1,9 +1,11 @@
+import {GeoPosition} from 'react-native-geolocation-service';
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
 import {AppReducer, Message, User} from './types';
 
 const initialState: AppReducer = {
   user: undefined,
   messages: [],
+  currentPosition: undefined,
 };
 
 export const appSlice = createSlice({
@@ -15,6 +17,9 @@ export const appSlice = createSlice({
     },
     addMessage: (state, action: PayloadAction<Message>) => {
       state.messages.push(action.payload);
+    },
+    setGeoPosition: (state, action: PayloadAction<GeoPosition>) => {
+      state.currentPosition = action.payload;
     },
   },
 });

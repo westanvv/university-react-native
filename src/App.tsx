@@ -5,7 +5,7 @@ import {LogBox} from 'react-native';
 
 import {getStore} from '@app/redux';
 import Navigation from '@app/navigation';
-import fcm from '@app/services/fcm';
+import services from '@app/services';
 import {appThunks} from '@app/redux';
 
 LogBox.ignoreAllLogs();
@@ -20,9 +20,14 @@ function App() {
 
   useEffect(() => {
     if (rehydrated) {
-      fcm({
+      services.fcm({
         addMessage: appThunks.addMessage,
       });
+      services.geolocation.init({
+        setPosition: appThunks.setGeoPosition,
+      });
+
+      services.geolocation.getCurrentPosition();
     }
   }, [rehydrated]);
 

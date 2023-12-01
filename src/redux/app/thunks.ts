@@ -1,3 +1,4 @@
+import {GeoPosition} from 'react-native-geolocation-service';
 import {dispatch} from '../helpers';
 
 import {User, Message} from './types';
@@ -9,4 +10,8 @@ export const setUser = (user: User) => {
 
 export const addMessage = (data: Message) => {
   dispatch(actions.addMessage(data));
+};
+
+export const setGeoPosition = (data: GeoPosition) => {
+  dispatch(actions.setGeoPosition(data));
 };

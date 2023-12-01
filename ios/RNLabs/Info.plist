@@ -36,7 +36,11 @@
 		</dict>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string>Test descriptionc 1</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Test description</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Test description</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Roboto-Black.ttf</string>
@@ -74,6 +78,7 @@
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>fetch</string>
+		<string>location</string>
 		<string>remote-notification</string>
 	</array>
 	<key>UILaunchStoryboardName</key>

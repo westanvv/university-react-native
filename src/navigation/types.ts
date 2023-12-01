@@ -1,6 +1,6 @@
 import {NavigatorScreenParams, RouteProp} from '@react-navigation/native';
 import {DrawerNavigationProp} from '@react-navigation/drawer';
-import {MaterialBottomTabNavigationProp} from '@react-navigation/material-bottom-tabs';
+import {BottomTabNavigationProp} from '@react-navigation/bottom-tabs';
 
 export type DashboardParamList = {
   AboutUs: undefined;
@@ -14,6 +14,6 @@ export type RootParamList = {
 
 export type NavigationProps = DrawerNavigationProp<RootParamList>;
 
-export type DashboardNavigationProps = MaterialBottomTabNavigationProp<DashboardParamList>;
+export type DashboardNavigationProps = BottomTabNavigationProp<DashboardParamList>;
 
 export type DashboardRouteProp = RouteProp<RootParamList, 'Dashboard'>;

@@ -26,6 +26,7 @@
 		A496F6AC20404E7190F57D54 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6029E62E82440C78AEA777A /* Roboto-Regular.ttf */; };
 		CA5351BA94E448048BF92552 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BC44CFA2EDA46B4BC1D6292 /* Roboto-Thin.ttf */; };
 		EE5CE1E5CD354D9588D2EDE6 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9281FD62A984F90885CA54D /* Roboto-Italic.ttf */; };
+		FB132D742B1A052A00E66807 /* EnableSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB132D732B1A052A00E66807 /* EnableSwift.swift */; };
 		FBE444DA2B0793D900341932 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FBE444D92B0793D800341932 /* GoogleService-Info.plist */; };
 		FBF8DB092AC70103007D3ED4 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FBF8DB022AC700BA007D3ED4 /* AntDesign.ttf */; };
 		FBF8DB0A2AC70103007D3ED4 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FBF8DAF62AC700BA007D3ED4 /* Entypo.ttf */; };
@@ -88,6 +89,8 @@
 		C985B8FE7AA94AE4B2090523 /* Roboto-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Black.ttf"; path = "../src/assets/fonts/Roboto-Black.ttf"; sourceTree = "<group>"; };
 		D9281FD62A984F90885CA54D /* Roboto-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Italic.ttf"; path = "../src/assets/fonts/Roboto-Italic.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		FB132D722B1A052A00E66807 /* RNLabs-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNLabs-Bridging-Header.h"; sourceTree = "<group>"; };
+		FB132D732B1A052A00E66807 /* EnableSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EnableSwift.swift; path = RNLabs/EnableSwift.swift; sourceTree = "<group>"; };
 		FBE444D92B0793D800341932 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "RNLabs/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FBF8DAF62AC700BA007D3ED4 /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		FBF8DAF72AC700BA007D3ED4 /* FontAwesome6_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome6_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome6_Brands.ttf"; sourceTree = "<group>"; };
@@ -219,6 +222,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				FB132D732B1A052A00E66807 /* EnableSwift.swift */,
 				13B07FAE1A68108700A75B9A /* RNLabs */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* RNLabsTests */,
@@ -226,6 +230,7 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
 				4E98A5F9614F42DE99195EE5 /* Resources */,
+				FB132D722B1A052A00E66807 /* RNLabs-Bridging-Header.h */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -312,7 +317,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1500;
 					};
 				};
 			};
@@ -562,6 +567,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB132D742B1A052A00E66807 /* EnableSwift.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
@@ -582,6 +588,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-RNLabs-RNLabsTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -609,6 +616,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-RNLabs-RNLabsTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = RNLabsTests/Info.plist;
@@ -651,6 +659,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rnlabs;
 				PRODUCT_NAME = RNLabs;
+				SWIFT_OBJC_BRIDGING_HEADER = "RNLabs-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -678,6 +687,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rnlabs;
 				PRODUCT_NAME = RNLabs;
+				SWIFT_OBJC_BRIDGING_HEADER = "RNLabs-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
